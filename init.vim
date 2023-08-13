@@ -69,3 +69,5 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 " Floaterm
 " Use :FloatermNew to open a terminal window, use :FloatermToggle to hide/reopen that. 
 " The filetype of the terminal buffer is floaterm.
+
+"Thanks NeuralNine.
