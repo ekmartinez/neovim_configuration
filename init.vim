@@ -54,6 +54,13 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 " :CocInstall coc-python (completions for python)
 " sudo pip install jedi
 "
+"Instructions for C compeletions (Tested on Ubuntu Server 22)
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"sudo apt-get install clangd-12 (install latest version, change 12 accordingly)
+"In vim: :CocInstall coc-clangd
+"if coc-clangd - if error when opening C file, try :CocCommand clangd.install
+"-------------------------------------------------------------------
+"
 " Vim Terminal (Does not work on Fedora Silverblue Toolbox)
 " Try Floaterm instead.
 " :TerminalSplit bash
