@@ -1,3 +1,5 @@
+" Location: ~/.config/nvim
+
 :set number
 :set relativenumber
 :set autoindent
@@ -52,7 +54,7 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 " yarn install
 " yarn build
 " :CocInstall coc-python (completions for python)
-" sudo pip install jedi
+" pip install jedi
 "
 "Instructions for C compeletions (Tested on Ubuntu Server 22)
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
