@@ -97,7 +97,7 @@ sudo pacman -S python-pip
 Install jedi:
 
 ```bash
-sudo pacman -S jedi
+sudo pacman -S python-jedi
 ```
 In a neovim instance install coc-python:
 
@@ -114,7 +114,7 @@ sudo pacman -S clang
 In a neovim instance:
 
 ```bash
-Coc-Install coc-clangd
+CocInstall coc-clangd
 ```
 
 If you get an error while openning a C file, try:
