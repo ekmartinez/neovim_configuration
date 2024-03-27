@@ -83,14 +83,14 @@ yarn build
 ```
 **The following are instructions for python:**
 ```bash
-# In a neovim instance:
-:CocInstall coc-python
-
-# On a terminal install pip if you dont have already:
+# On a terminal install pip if you dont have it already:
 sudo pacman -S python-pip
 
 # Install jedi
 sudo pacman -S jedi
+
+# In a neovim instance:
+:CocInstall coc-python
 ```
 
 **The following are instructions for C**
@@ -105,3 +105,4 @@ Coc-Install coc-clangd
 If you get an error while openning a C file, try:
 ```bash
 :CocCommand clang.install
+```
