@@ -4,6 +4,7 @@
 2. Install Vim-Plug
 3. Install-Update-Remove Plugins
 4. Setup Python & C Code Completions
+5. Setup Nerdtree 
 
 ## Install Neovim
 
@@ -78,31 +79,47 @@ sudo pacman -S nodejs npm
 Navigate to the coc.nvim directory (~/.local/share/nvim/plugged/coc.nvim) and install yarn:
 ```bash
 sudo npm install -g yarn
+```
+```bash
 yarn install
+```
+```bash
 yarn build
 ```
+
 **The following are instructions for python:**
+
+On a terminal install pip if you dont have it already:
+
 ```bash
-# On a terminal install pip if you dont have it already:
 sudo pacman -S python-pip
+```
 
-# Install jedi
+Install jedi:
+
+```bash
 sudo pacman -S jedi
+```
+In a neovim instance install coc-python:
 
-# In a neovim instance:
+```bash
 :CocInstall coc-python
 ```
 
 **The following are instructions for C**
-```bash
-# On a terminal:
-sudo pacman -S clang
 
-# In a neovim instance:
+On a terminal:
+```bash
+sudo pacman -S clang
+```
+In a neovim instance:
+
 ```bash
 Coc-Install coc-clangd
 ```
+
 If you get an error while openning a C file, try:
+
 ```bash
 :CocCommand clang.install
 ```
