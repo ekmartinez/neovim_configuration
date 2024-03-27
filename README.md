@@ -4,7 +4,6 @@
 2. Install Vim-Plug
 3. Install-Update-Remove Plugins
 4. Setup Python & C Code Completions
-5. Setup Nerdtree 
 
 ## Install Neovim
 
@@ -67,7 +66,7 @@ Plug 'https://github.com/neoclide/coc.nvim'
 
 call plug#end()
 ```
-Install it with:
+On a neovim instance install it with:
 
 ```bash
 :PlugInstall
