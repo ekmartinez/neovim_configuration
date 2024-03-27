@@ -40,7 +40,12 @@ Afterwards, open the neovim editor and type:
 ```
 Similarly, to update installed plugins you do so by typing:
 ```bash
+:UpdateRemotePlugins
+
+#or
+
 :PlugUpdate
+
 ```
 To update vim-plug, you do so by typing:
 ```bash
@@ -50,3 +55,53 @@ To remove a plugin, you will first need to remove the entry on the config file a
 ```bash
 :PlugClean
 ```
+## Setup Python & C code completions
+
+First add Conquer of Completions (COC) in your config file:
+
+```bash
+call plug#begin()
+
+Plug 'https://github.com/neoclide/coc.nvim'
+
+call plug#end()
+```
+Install it with:
+
+```bash
+:PlugInstall
+```
+Install nodejs and npm
+```bash
+sudo pacman -S nodejs npm
+```
+Navigate to the coc.nvim directory (~/.local/share/nvim/plugged/coc.nvim) and install yarn:
+```bash
+sudo npm install -g yarn
+yarn install
+yarn build
+```
+**The following are instructions for python:**
+```bash
+# In a neovim instance:
+:CocInstall coc-python
+
+# On a terminal install pip if you dont have already:
+sudo pacman -S python-pip
+
+# Install jedi
+sudo pacman -S jedi
+```
+
+**The following are instructions for C**
+```bash
+# On a terminal:
+sudo pacman -S clang
+
+# In a neovim instance:
+```bash
+Coc-Install coc-clangd
+```
+If you get an error while openning a C file, try:
+```bash
+:CocCommand clang.install
